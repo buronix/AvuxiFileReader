@@ -17,6 +17,8 @@ git clone https://github.com/buronix/AvuxiFileReader.git
 
 Installation:
 
+Got to the clone repository location and navigate to the AvuxiFileReader directory
+
 Windows
 
 dotnet publish -c release -r win-x64
