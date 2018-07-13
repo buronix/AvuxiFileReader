@@ -32,7 +32,7 @@ dotnet publish -c release -r ubuntu.16.04-x64
 dotnet publish -c release -r linux-x64
 
 
-# Use:
+# Usage:
 
 ### Windows 
 
@@ -43,3 +43,14 @@ bin\Release\netcoreapp2.0\win-x64\AvuxiFileReader.exe [filePath] (Ej:exampleFile
 Add execution permissions to executable chmod 777 bin/Release/netcoreapp2.0/ubuntu.16.04-x64/AvuxiFileReader
 
 ./bin/Release/netcoreapp2.0/ubuntu.16.04-x64/AvuxiFileReader [filePath] (Ej:exampleFile_lat.txt)
+
+# Configuration Options:
+You can configure via the file configuration.json
+```
+{
+  "Options": {
+    "EnableDebug": true,//Enable Additional Debug Information
+    "IgnoreSpaces": true//Ignore counting the spaces distribution in the file, false to display the counting
+  }
+}
+```
