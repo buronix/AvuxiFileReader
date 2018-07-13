@@ -50,7 +50,7 @@ You can configure via the file configuration.json
 {
   "Options": {
     "EnableDebug": true,//Enable Additional Debug Information
-    "IgnoreSpaces": true//Ignore counting the spaces distribution in the file, false to display the counting
+    "IgnoreSpaces": true//Ignore counting the spaces distribution in the file, false to count and display spaces
   }
 }
 ```
