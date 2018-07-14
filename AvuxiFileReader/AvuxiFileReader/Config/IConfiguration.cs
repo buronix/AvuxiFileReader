@@ -1,21 +1,25 @@
-﻿namespace AvuxiFileReader.Config
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AvuxiFileReader.Config
 {
     /// <summary>
-    /// Class to bind the configuration file
+    /// Configuration Interface
     /// </summary>
-    public class Configuration : IConfiguration
+    public interface IConfiguration
     {
         /// <summary>
         /// activate to display additional info debug info
         /// </summary>
-        public bool EnableDebug { get; set; } = false;
+        bool EnableDebug { get; set; }
         /// <summary>
         /// activate to ignore the spaces distribution inside the file
         /// </summary>
-        public bool IgnoreSpaces { get; set; } = true;
+        bool IgnoreSpaces { get; set; }
         /// <summary>
         /// Format the output for easy List the contents of the file
         /// </summary>
-        public bool FormatOutput { get; set; } = false;
+        bool FormatOutput { get; set; }
     }
 }

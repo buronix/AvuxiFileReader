@@ -1,7 +1,8 @@
 {
   "profiles": {
     "AvuxiFileReader": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "exampleFile_lat.txt"
     }
   }
 }

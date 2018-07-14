@@ -1,6 +1,7 @@
 {
   "Options": {
     "EnableDebug": true,
-    "IgnoreSpaces": true
+    "IgnoreSpaces": true,
+    "FormatOutput":  true
   }
 }
