@@ -38,7 +38,7 @@ namespace AvuxiFileReader
             .BuildServiceProvider();
 
             //Bind the Options to the configuration class
-            var options = serviceProvider.GetService<Config.IConfiguration>();
+            Configuration options = serviceProvider.GetService<Config.IConfiguration>() as Configuration;
 
             configuration.GetSection("Options").Bind(options);
 
@@ -104,7 +104,13 @@ namespace AvuxiFileReader
                 {
                     MainLogger.LogInformation("Stop application");
                 }
-                Console.ReadLine();
+
+                //IF we are in Development, wait for a input Key to allow display the application output
+                if (options.isDevelopment())
+                {
+                    MainLogger.LogInformation("Press a key to exit the application");
+                    Console.ReadKey();
+                }
                 Environment.Exit(exitCode);
             }
         }

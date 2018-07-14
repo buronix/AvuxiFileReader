@@ -2,7 +2,10 @@
   "profiles": {
     "AvuxiFileReader": {
       "commandName": "Project",
-      "commandLineArgs": "exampleFile_lat.txt"
+      "commandLineArgs": "exampleFile_lat.txt",
+      "environmentVariables": {
+        "AVUXI_ENV": "Development"
+      }
     }
   }
 }
